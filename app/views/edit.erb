@@ -1,6 +1,6 @@
 <h2>Edit Recipe: <%= @recipe.name %></h2>
 
-<a href="/recipes">Cancel</a>
+Back to<a href="/recipes">Recipes</a>
 
 <form action="/recipes/<%=@recipe.id%>" method="POST" >
   <input id="hidden" type="hidden" name="_method" value="patch"><br>
