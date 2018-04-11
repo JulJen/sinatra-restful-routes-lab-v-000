@@ -2,9 +2,10 @@
 
 <% @recipes.each.with_index do |recipe, i| %>
   <h2>Recipe # <%= i +1 %></h2>
-  <a href="/recipes/<%= recipe.id %>/edit">Update
+
   <!-- <a href="/recipes/<%=recipe.id %>"></a> -->
   <p>Name: <%= recipe.name %></p>
   <p>Ingredients: <%= recipe.ingredients %></p>
   <p>Cook Time: <%= recipe.cook_time %></p>
+  <a href="/recipes/<%= recipe.id %>/edit">Update
 <% end %>
