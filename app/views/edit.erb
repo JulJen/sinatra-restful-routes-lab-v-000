@@ -8,7 +8,7 @@ Back to <a href="/recipes">Recipes</a>
   <p>Ingredients: <input id="ingredients_names" type="text"  name="ingredients" value="<%=@recipe.ingredients%>"></p>
   <p>Cook Time: <input id="cook_time" type="text" name="cook_time" value="<%=@recipe.cook_time%>"></p>
   <input type="submit" value="submit">
-<!-- </form> -->
+</form>
 
 <form action="/recipes/<%= @recipe.id %>/delete" method="POST" >
   <input id="hidden" type="hidden" name="_method" value="delete">
