@@ -1,8 +1,8 @@
 <p>Create a <a href="/recipes/new">new recipe</a></p>
 
 <% @recipes.each.with_index do |recipe, i| %>
-  <a href="/recipes/<%= recipe.id %>/edit">Update</a>
   <h2>Recipe # <%= i +1 %></h2>
+  <a href="/recipes/<%= recipe.id %>/edit">Update</a>
 
   <!-- <a href="/recipes/<%=recipe.id %>"></a> -->
   <p>Name: <%= recipe.name %></p>
