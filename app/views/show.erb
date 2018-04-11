@@ -2,11 +2,11 @@
 
 Back to <a href="/recipes">Recipes</a><br><br>
 
+<a href="/recipes/<%= @recipe.id %>/edit">Update<br><br>
+
 <label for="name">Recipe: <%= @recipe.name %></label><br><br>
 <label for="ingredients">Ingredients: <%= @recipe.ingredients %></label><br><br>
 <label for="cook time">Cook Time: <%= @recipe.cook_time %></label><br><br>
-
-<a href="/recipes/<%= @recipe.id %>/edit">Update<br><br>
 
 <form action="/recipes/<%= @recipe.id %>/delete" method="POST" >
   <input id="hidden" type="hidden" name="_method" value="delete">
