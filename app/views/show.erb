@@ -6,7 +6,7 @@
 <label for="ingredients">Ingredients: <%= @recipe.ingredients %></label><br><br>
 <label for="cook time">Cook Time: <%= @recipe.cook_time %></label><br><br>
 
-Update <a href="/recipes/<%= @recipe.id %>/edit"><%= @recipe.name %></a><br><br<
+Update <a href="/recipes/<%= @recipe.id %>/edit"><%= @recipe.name %></a><br><br>
 
 <form action="/recipes/<%= @recipe.id %>/delete" method="POST" >
   <input id="hidden" type="hidden" name="_method" value="delete">
