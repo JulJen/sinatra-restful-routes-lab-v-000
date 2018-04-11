@@ -1,5 +1,7 @@
 <h2>Edit Recipe: <%= @recipe.name %></h2>
 
+<a href="/recipes/<%= @recipe.id %>/edit">Cancel</a><br><br>
+
 <form action="/recipes/<%=@recipe.id%>" method="POST" >
   <input id="hidden" type="hidden" name="_method" value="patch"><br>
   <p>Name: <input id="recipe_name" type="text"  name="name" value="<%=@recipe.name%>"></p>
